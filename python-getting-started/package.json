@@ -1,0 +1,19 @@
+{
+  "name": "python-getting-started",
+  "version": "1.0.0",
+  "description": "A barebones Django app, which can easily be deployed to Heroku.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heroku/python-getting-started.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heroku/python-getting-started/issues"
+  },
+  "homepage": "https://github.com/heroku/python-getting-started#readme"
+}

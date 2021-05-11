@@ -1,0 +1,50 @@
+
+
+HEROKU COMMANDS
+
+heroku login        # logins to heroku account
+heroku create       #create instance of an app 
+git remote -v       # see pointers for git 
+git push heroku main    # push the changes to make a new version of the heroku app
+heroku logs              # see the logs of the web app, router, etc 
+
+heroku ps                               # can look at dynos running 
+heroku ps:scale web=0                   # scales dynos to 0 so nothing can run 
+heroku ps:scale web=5:Standard-2X       # scales dynos to 4 so 4 dynos can run an instance of the app
+heroku ps:scale web=1:Free              # scales down to one dyno 
+
+
+
+Running Apps locally 
+    - npm install           #install dependencies  (npm is node package manager for JS programming)
+    - heroku local          # run the app locally at the port defined called from Procfile 
+    - 
+
+    - git add  # ----> to normal git repo etc
+    - git commit -m ""   git push 
+    - git push heroku master        # to update the actual heroku app 
+
+
+The Procfile    
+    - Only Heroku Specific file 
+    - notes how to run the heroku app 
+    -
+    CODING 
+        - web: node index.js        # how to open on the web
+        - queue: node queueP.js     # start with a queue process
+
+
+
+Heroku Addons
+- heroku addons:create papertrail       #example of an addon, has individual pricing, and typically dedicated console
+- 
+
+
+Config Vars 
+- heroku config:set VAR=10          # environment variables for the app 
+
+
+Provisioning Database 
+    elements.heroku.com/addons/
+
+    - 
